@@ -16,7 +16,7 @@ jobs:
       - name: Installing dependencies
         run: yarn
       - name: Building the project
-        run: yarn build
+        run: VUE_APP_BUILD_DATE=$(date --iso-8601='s') yarn build
       - name: Deploy to Firebase Hosting
         uses: w9jds/firebase-action@master
         with:
