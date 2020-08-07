@@ -13,6 +13,7 @@ import {
   mdiEmail as Email,
   mdiGithub as GitHub,
   mdiTwitter as Twitter,
+  mdiLinkedin as LinkedIn,
 } from '@mdi/js';
 
 export default {
@@ -21,6 +22,7 @@ export default {
     links: [
       { title: 'GitHub', icon: GitHub, url: 'https://github.com/IncognitoJam' },
       { title: 'Twitter', icon: Twitter, url: 'https://twitter.com/cameronjclough' },
+      { title: 'LinkedIn', icon: LinkedIn, url: 'https://www.linkedin.com/in/cameronjclough/' },
       { title: 'Email', icon: Email, url: 'mailto:cameronjclough@gmail.com' },
     ],
   }),
