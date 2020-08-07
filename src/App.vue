@@ -1,18 +1,21 @@
 <template>
   <Avatar />
   <HelloWorld msg="Hello, I'm Cameron" />
+  <SocialLinks />
   <span class="timestamp">Last updated: {{ buildTimestamp }}</span>
 </template>
 
 <script>
 import Avatar from './components/Avatar.vue';
 import HelloWorld from './components/HelloWorld.vue';
+import SocialLinks from './components/SocialLinks.vue';
 
 export default {
   name: 'App',
   components: {
     Avatar,
     HelloWorld,
+    SocialLinks,
   },
   computed: {
     buildTimestamp() {
