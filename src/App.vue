@@ -1,7 +1,9 @@
 <template>
   <section id="main">
     <Avatar />
-    <HackerTyper msg="Hello, I'm Cameron" el="h1" />
+    <HackerTyper>
+      <h1>Hello, I'm Cameron</h1>
+    </HackerTyper>
     <HackerTyper msg="A software engineering student at Lancaster University" el="p" delay="900" />
     <SocialLinks />
   </section>
