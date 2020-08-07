@@ -1,14 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <Avatar />
+  <HelloWorld msg="Hello, I'm Cameron" />
 </template>
 
 <script>
+import Avatar from './components/Avatar.vue';
 import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
   components: {
+    Avatar,
     HelloWorld,
   },
 };
