@@ -1,21 +1,22 @@
 <template>
   <Avatar />
-  <HelloWorld msg="Hello, I'm Cameron" />
+  <Typer msg="Hello, I'm Cameron" el="h1" />
+  <Typer msg="A software engineering student at Lancaster University" el="p" delay="900" />
   <SocialLinks />
   <span class="timestamp">Last updated: {{ buildTimestamp }}</span>
 </template>
 
 <script>
 import Avatar from './components/Avatar.vue';
-import HelloWorld from './components/HelloWorld.vue';
 import SocialLinks from './components/SocialLinks.vue';
+import Typer from './components/Typer.vue';
 
 export default {
   name: 'App',
   components: {
     Avatar,
-    HelloWorld,
     SocialLinks,
+    Typer,
   },
   computed: {
     buildTimestamp() {

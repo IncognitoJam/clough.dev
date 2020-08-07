@@ -1,15 +1,23 @@
 <template>
-  <h1>{{ text }}</h1>
+  <component :is="el">{{ text }}</component>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Typer',
   props: {
+    el: {
+      type: String,
+      default: 'span',
+    },
     msg: String,
     speed: {
       type: Number,
-      default: 60,
+      default: 45,
+    },
+    delay: {
+      type: Number,
+      default: 0,
     },
   },
   data() {
@@ -27,7 +35,7 @@ export default {
     },
   },
   mounted() {
-    this.type();
+    setTimeout(this.type, this.delay);
   },
 };
 </script>
