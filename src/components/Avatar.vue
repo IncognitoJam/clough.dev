@@ -1,5 +1,5 @@
 <template>
-  <div id="avatar" />
+  <div class="avatar" />
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style lang="scss">
-#avatar {
+.avatar {
   border: 4px solid #4dd05b;
   border-radius: 50%;
   height: 10em;
@@ -25,7 +25,7 @@ export default {
   transition: background .2s;
 }
 
-#avatar:hover {
+.avatar:hover {
   background-image: url('/keith2.webp');
 }
 </style>

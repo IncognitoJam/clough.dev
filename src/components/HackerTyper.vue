@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Typer',
+  name: 'HackerTyper',
   props: {
     el: {
       type: String,
