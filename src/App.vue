@@ -6,6 +6,10 @@
     </HackerTyper>
     <HackerTyper msg="A software engineering student at Lancaster University" el="p" delay="900" />
     <SocialLinks />
+
+    <a href="https://now-playing-profile.incognitojam.vercel.app/now-playing?open">
+      <img src="https://now-playing-profile.incognitojam.vercel.app/now-playing?dark=true&width=450" width="450" height="64" alt="Now playing">
+    </a>
   </section>
 
   <section id="footer">
