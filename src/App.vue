@@ -7,7 +7,7 @@
     <HackerTyper msg="A software engineering student at Lancaster University" el="p" delay="900" />
     <SocialLinks />
 
-    <p class="title mt-4">🎧 Now playing on Spotify</p>
+    <p class="title mt-12">🎧 Now playing on Spotify</p>
     <a href="https://now-playing-profile.incognitojam.vercel.app/now-playing?open">
       <img src="https://now-playing-profile.incognitojam.vercel.app/now-playing?dark=true&width=450" width="450" height="64" alt="Now playing">
     </a>
