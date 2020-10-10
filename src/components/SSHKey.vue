@@ -1,11 +1,11 @@
 <template>
-  <v-btn
-     text
-     class="ssh-key"
-     @click="copySSHKey"
+  <span
+    text
+    class="ssh-key"
+    @click="copySSHKey"
   >
     Copy SSH Key
-  </v-btn>
+  </span>
 </template>
 
 <script>
@@ -23,5 +23,11 @@ export default {
 .ssh-key {
   text-decoration: none;
   font-size: 14px;
+
+  transition: color 0.5s ease;
+}
+
+.ssh-key:hover {
+  color: cyan;
 }
 </style>
