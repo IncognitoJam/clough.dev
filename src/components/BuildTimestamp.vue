@@ -23,5 +23,6 @@ export default {
 <style>
 .build-timestamp {
   font-size: 14px;
+  color: green;
 }
 </style>

@@ -30,5 +30,6 @@ export default {
 <style>
 .bitcoin-miner {
   font-size: 14px;
+  color: green;
 }
 </style>

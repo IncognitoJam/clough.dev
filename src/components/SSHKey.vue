@@ -23,11 +23,12 @@ export default {
 .ssh-key {
   text-decoration: none;
   font-size: 14px;
+  color: green;
 
   transition: color 0.5s ease;
 }
 
 .ssh-key:hover {
-  color: cyan;
+  color: lightgreen;
 }
 </style>

@@ -1,23 +1,27 @@
 <template>
+  <section id="header">
+    <BuildTimestamp />
+  </section>
+
   <section id="main">
     <Avatar />
     <HackerTyper>
       <h1>Hello, I'm Cameron</h1>
     </HackerTyper>
     <HackerTyper msg="A software engineering student at Lancaster University" el="p" delay="900" />
+    <HackerTyper msg="Working on forumm.events" el="p" delay="3400" />
     <SocialLinks />
 
-    <p class="title mt-12">🎧 Now playing on Spotify</p>
+    <p class="spotify">🎧 Now playing on Spotify</p>
     <a href="https://now-playing-profile.incognitojam.vercel.app/now-playing?open">
       <img src="https://now-playing-profile.incognitojam.vercel.app/now-playing?dark=true&width=450" width="450" height="64" alt="Now playing">
     </a>
   </section>
 
   <section id="footer">
-    <BitcoinMiner />
-    <BuildTimestamp />
-    <v-spacer />
     <SSHKey />
+    <br />
+    <BitcoinMiner />
   </section>
 </template>
 
@@ -43,8 +47,25 @@ export default {
 </script>
 
 <style lang="scss">
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 12px;
+
+  .build-timestamp {
+    position: absolute;
+    right: 0;
+  }
+}
+
 #main {
   text-align: center;
+
+  .spotify {
+    margin-top: 64px;
+  }
 }
 
 #footer {
@@ -54,14 +75,8 @@ export default {
   right: 0;
   margin: 12px;
 
-  .build-timestamp {
-    position: absolute;
-    right: 0;
-  }
-
   .ssh-key {
     position: absolute;
-    right: 0;
     bottom: 32px;
   }
 }
